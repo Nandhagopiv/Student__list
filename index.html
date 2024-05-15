@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Student List</title>
+</head>
+
+<body>
+    <section class="flex justify-center">
+        <table class="m-10">
+            <tr>
+                <td>
+                    <label>Name: </label>
+                </td>
+                <td>
+                    <input id="name" class="border border-black p-1 m-1 w-56 sm:w-96" type="text"
+                        placeholder="Enter your Name">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Age: </label>
+                </td>
+                <td>
+                    <input id="age" class="border border-black p-1 m-1 w-56 sm:w-96" type="number"
+                        placeholder="Enter your Age">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Gender: </label>
+                </td>
+                <td>
+                    <input class="p-1 m-2" type="radio" value="Female" name="Gender"> Female
+                    <input class="p-1 m-2" type="radio" value="Male" name="Gender"> Male
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Email: </label>
+                </td>
+                <td>
+                    <input id="email" class="border border-black p-1 m-1 w-56 sm:w-96" type="email"
+                        placeholder="Enter your Mail">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Phone number: </label>
+                </td>
+                <td>
+                    <input id="phone" class="border border-black p-1 m-1 w-56 sm:w-96" type="number"
+                        placeholder="Enter your Phone">
+                </td>
+            </tr>
+            <tr>
+                <td>
+
+                </td>
+                <td class="text-center">
+                    <button id="savebtn" class="bg-green-900 p-1 m-1 w-56 sm:w-96 text-white">Save</button>
+                </td>
+            </tr>
+
+        </table>
+    </section>
+    <div style="width: 100%;">
+        <main class="flex sm:justify-center m-5 sm:m-5 overflow-auto justify-between">
+            <table style="width: 75%;" id="stulist">
+
+            </table>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
